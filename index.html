@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dharshni | Cybersecurity Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --bg: #0e0b16;
+      --text: #e0e0e0;
+      --accent: #08fdd8;
+      --highlight: #ff2a68;
+      --card: #1a1a2e;
+      --font: 'Share Tech Mono', monospace;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font);
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background: var(--card);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+
+    nav h1 {
+      color: var(--accent);
+      font-size: 1.8rem;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text);
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .cover-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: radial-gradient(circle at center, #1a1a2e 30%, #0e0b16 100%);
+      color: white;
+      padding: 40px 10%;
+    }
+
+    .cover-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background: #ffffff08;
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+      position: relative;
+    }
+
+    .image-wrapper {
+      position: relative;
+      display: inline-block;
+    }
+
+    .image-wrapper img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--accent);
+      transition: 0.3s ease-in-out;
+    }
+
+    .image-wrapper .hover-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: var(--accent);
+      background: rgba(0, 0, 0, 0.7);
+      padding: 10px 20px;
+      border-radius: 8px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+
+    .image-wrapper:hover .hover-text {
+      opacity: 1;
+    }
+
+    .cover-container h1 {
+      font-size: 2.8rem;
+      color: var(--accent);
+      margin-top: 20px;
+    }
+
+    .cover-container h3 {
+      font-size: 1.2rem;
+      font-weight: normal;
+      color: var(--text);
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 60px 10%;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: var(--accent);
+      border-bottom: 2px dashed var(--highlight);
+      padding-bottom: 10px;
+      position: relative;
+    }
+
+    h2::before {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 3px;
+      background: var(--highlight);
+      bottom: 0;
+      left: 0;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 25px;
+      margin-bottom: 30px;
+      border-left: 5px solid var(--accent);
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      transition: 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(8, 253, 216, 0.3);
+    }
+
+    .card-list {
+      display: grid;
+      gap: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: var(--card);
+      color: #888;
+      margin-top: 40px;
+    }
+
+    a {
+      color: var(--highlight);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>Dharshni</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="cover-section">
+    <div class="cover-container">
+      <div class="image-wrapper">
+        <img src="pic.jpg" alt="Dharshni Portfolio Photo">
+        <div class="hover-text">Welcome to my portfolio!</div>
+      </div>
+      <h1>Dharshni B</h1>
+      <h3>Cybersecurity Enthusiast · 2022 - 2026</h3>
+    </div>
+  </section>
+
+  <section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>I am an enthusiastic and motivated Computer Science and Engineering student with a strong foundation in programming, problem-solving, and creative design. I am passionate about cybersecurity, ethical hacking, web development, and network security.</p>
+    <p>My journey includes impactful internships, participation in national-level hackathons, and contributions to open-source projects. I have developed multiple responsive websites using HTML, CSS, and JavaScript, and I continually seek to expand my skills through workshops and certifications.</p>
+    <p>I am committed to continuous learning and thrive in collaborative environments. I am currently pursuing my B.E. degree (2022–2026) and am eager to make a significant impact in the field of cybersecurity and software development.</p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="card-list">
+    <div class="card"><strong>Languages:</strong> Python, Java, C, JavaScript</div>
+    <div class="card"><strong>Frontend:</strong> HTML5, CSS3, Responsive Design</div>
+    <div class="card"><strong>Development Tools:</strong> Git, GitHub, VS Code</div>
+    <div class="card"><strong>Cybersecurity:</strong> Network Security Basics, Data Protection</div>
+    <div class="card"><strong>Soft Skills:</strong> Communication, Teamwork, Public Speaking</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="card-list">
+    <div class="card">
+      <h3>Food Website</h3>
+      <p>Created a responsive restaurant website using HTML, CSS, and JS. Features include animated homepage, interactive menu, and mobile optimization.</p>
+    </div>
+    <div class="card">
+      <h3>Dance Website</h3>
+      <p>Designed a portfolio for a dance academy with image sliders, event listing, and contact forms using HTML, CSS, and JavaScript.</p>
+    </div>
+    <div class="card">
+      <h3>Security Awareness Blog</h3>
+      <p>Developed an educational blog that shares tips on password safety, phishing awareness, and personal data protection best practices.</p>
+    </div>
+  </div>
+</section>
+
+<section id="resume">
+  <h2>Resume Highlights</h2>
+  <div class="card-list">
+    <div class="card">Finalist - Smart India Hackathon 2023</div>
+    <div class="card">Intern - SCODE Software Solutions Pvt. Ltd.</div>
+    <div class="card">Certified - Full Stack Development (Simplilearn)</div>
+    <div class="card">Workshop - Cloud Computing (Cloud Logic)</div>
+    <div class="card">Completed - Naan Mudhalvan Cybersecurity Training</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card-list">
+    <div class="card"><i class="fas fa-envelope"></i> <a href="mailto:dharshni322@gmail.com">dharshni322@gmail.com</a></div>
+    <div class="card"><i class="fas fa-phone"></i> <a href="tel:9677924075">9677924075</a></div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Dharshni B — All Rights Reserved</p>
+</footer>
+</body>
+</html>
